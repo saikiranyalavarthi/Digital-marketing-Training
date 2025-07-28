@@ -1,0 +1,413 @@
+/* Global reset and font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #f0f4ff, #e0f0ff);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+/* Base Styles */
+header {
+  background: linear-gradient(90deg, #1d3557, #457b9d);
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #a8dadc, #f1faee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #f1faee;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger menu (Mobile only) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive: Show toggle & nav dropdown on mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(29, 53, 87, 0.95);
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://images.unsplash.com/photo-1556761175-4b46a572b786")
+    no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  animation: fadeDown 1s ease-out;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  animation: fadeUp 1s ease-in-out;
+}
+
+.btn {
+  background: linear-gradient(90deg, #e63946, #ff6b6b);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #ff6b6b, #e63946);
+}
+
+/* Section */
+.section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.highlights {
+  background: #f1f1f1;
+}
+
+/* Features */
+.features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  flex: 1 1 30%;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Form */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #1d3557;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Icons Grid */
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.icons-grid .card {
+  text-align: center;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+.icons-grid .card i {
+  font-size: 36px;
+  color: #e63946;
+  margin-bottom: 15px;
+}
+
+/* Training Works Section */
+.training-works {
+  background: #f0f8ff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.training-works h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+.training-works .subtitle {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.training-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.training-step {
+  width: 200px;
+}
+
+.training-step img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.training-step p {
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.feature-card i {
+  color: #4a56e2;
+  margin-bottom: 0.75rem;
+}
+
+/* Color Class */
+#changecolor {
+  color: indigo;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.show {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background-color: rgba(29, 53, 87, 0.9);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .features,
+  .training-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .features-grid,
+  .icons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-step {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .training-step img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .training-works h2 {
+    font-size: 22px;
+  }
+
+  .training-works .subtitle {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Animations */
+@keyframes fadeDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
