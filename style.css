@@ -388,7 +388,46 @@ footer {
     padding: 15px;
   }
 }
-
+.modules {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+.modules .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  text-align: left;
+}
+.modules .grid div {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.modules i {
+  color: #4f46e5;
+}
+.why {
+  background: #f9f9f9;
+  padding: 60px 20px;
+}
+.why .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  text-align: left;
+}
+.why .item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.why .item i {
+  color: green;
+  margin-top: 5px;
+}
 /* Animations */
 @keyframes fadeDown {
   from {
