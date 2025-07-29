@@ -4,608 +4,675 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Marketing Training</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .navbar-custom {
+        background: linear-gradient(to right, #1d3557, #457b9d);
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #fff !important;
+      }
+      .nav-link:hover {
+        color: #ffcc00 !important;
+      }
+      .hero {
+        background: #eaf4ff;
+        padding: 80px 0;
+      }
+      .about-image img,
+      .card-img-top {
+        border-radius: 8px;
+      }
+    </style>
   </head>
-  <header>
-  <div class="container">
-    <h1 class="logo">Digital Marketing Training Agency</h1>
-    <nav id="nav">
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#highlights">Courses</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Digital Marketing Training</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  </div>
-</header>
-
-
-    <section class="hero">
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section
+      class="hero text-center text-white d-flex align-items-center"
+      style="
+        background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786')
+          no-repeat center center/cover;
+        height: 400px;
+      "
+    >
       <div class="container">
-        <h2>Learn Digital Marketing from Experts</h2>
-        <p>SEO, Google Ads, Social Media, Email Marketing & More</p>
-        <a href="#contact" class="btn">Join Now</a>
+        <h2 class="display-5 fw-bold">Learn Digital Marketing from Experts</h2>
+        <p class="lead">
+          SEO, Google Ads, Social Media, Email Marketing & More
+        </p>
+        <a href="#contact" class="btn btn-warning btn-lg mt-3">Join Now</a>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div
-        class="container"
-        style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem"
-      >
-        <!-- Text Column -->
-        <div class="about-text" style="flex: 1; min-width: 300px">
-          <h2 style="color: blue">About the Training</h2>
-          <p>
-            This hands-on training covers all essential aspects of Digital
-            Marketing. Perfect for students, business owners, freelancers, and
-            professionals who want to boost their online presence and achieve
-            measurable results.
-          </p>
-          <p>
-            Our training is designed to be practical and interactive, ensuring
-            you gain real-world skills that can be applied immediately. We focus
-            on the latest tools, techniques, and strategies that are currently
-            shaping the digital marketing landscape.
-          </p>
-
-          <p>
-            <br /><br />
-            As an agency, we also deliver comprehensive digital marketing
-            solutions across the globe. Our clientele ranges from niche startups
-            to global industry leaders. This gives us deep industry insight,
-            which we bring directly into our training sessions.
-          </p>
-          <p>
-            We constantly stay updated with the latest trends, tools, and
-            algorithm changes in the digital marketing world — and we’re excited
-            to share that valuable knowledge with you. Our training is not only
-            theoretical but includes real-world examples and project-based
-            learning.
-          </p>
-          <p>
-            By joining this course, you'll get hands-on experience with SEO,
-            Google Ads, Social Media Marketing, Content Strategy, Analytics, and
-            much more. It’s designed to equip you with practical skills that
-            make you job-ready or capable of managing your own digital
-            campaigns.
-          </p>
-          <p>
-            Feel free to check it out for more information on Digital Marketing
-            Training to build a lucrative and rewarding career. We look forward
-            to meeting you in our fun and energetic training sessions, packed
-            with real-life examples and interactive exercises.
-          </p>
-          <p>
-            <strong
-              >To attend a Free Demo, Call now to discuss your
-              requirements!</strong
-            >
-          </p>
-        </div>
-
-        <!-- Image Column -->
-        <div class="about-image" style="flex: 1; min-width: 300px">
-          <img
-            src="image1.jpg"
-            alt="Digital Marketing Training"
-            style="width: 100%; border-radius: 8px"
-          />
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h2 class="text-primary mb-3">About the Training</h2>
+            <p>
+              This hands-on training covers all essential aspects of Digital
+              Marketing, ideal for students, business owners, freelancers, and
+              professionals wanting to boost their online presence and results.
+            </p>
+            <p>
+              This hands-on training covers all essential aspects of Digital
+              Marketing. Perfect for students, business owners, freelancers, and
+              professionals who want to boost their online presence and achieve
+              measurable results. Our training is designed to be practical and
+              interactive, ensuring you gain real-world skills that can be
+              applied immediately. We focus on the latest tools, techniques, and
+              strategies that are currently shaping the digital marketing
+              landscape.
+            </p>
+            <ul>
+              <li>SEO & Google Ads</li>
+              <li>Social Media Marketing</li>
+              <li>Content & Email Marketing</li>
+              <li>Analytics & Live Campaigns</li>
+            </ul>
+            <p class="fw-bold text-success mt-3">
+              To attend a Free Demo, call now!
+            </p>
+          </div>
+          <div class="col-lg-6 about-image">
+            <img
+              src="image1.jpg"
+              alt="Digital Marketing Training"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
     </section>
-    <section class="core-section">
-    <div class="contain">
-      <div class="image-side">
-        <img src="image2.jpg" alt="Training Image">
-      </div>
-      <div class="content-side">
-        <h2>Our Core Values</h2>
-        <ul class="core-values">
-          <li><i class="fas fa-certificate"></i> Quality of Training as per International Standards.</li>
-          <li><i class="fas fa-chalkboard-teacher"></i> Provide Real-time Training with Live Examples.</li>
-          <li><i class="fas fa-smile-beam"></i> Students satisfaction is the ultimate goal for us.</li>
-          <li><i class="fas fa-balance-scale"></i> Business ethics are more important than money.</li>
-          <li><i class="fas fa-user-graduate"></i> Help students with Personality Development.</li>
-          <li><i class="fas fa-lightbulb"></i> Help students become entrepreneurs with motivation.</li>
-        </ul>
 
-        <div class="vision-mission">
-          <h3><i class="fas fa-eye"></i> Vision</h3>
-          <p>To create innovative training methodologies and products to make education useful in practical life.</p>
-          
-          <h3><i class="fas fa-bullseye"></i> Mission</h3>
-          <p>To provide training in real-time standards and help students achieve their true potential.</p>
+    <!-- Core Values -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-6">
+            <img
+              src="image2.jpg"
+              alt="Training Image"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-4">Our Core Values</h2>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-certificate text-primary me-2"></i
+                >International Standard Training
+              </li>
+              <li>
+                <i class="fas fa-chalkboard-teacher text-primary me-2"></i
+                >Real-time Training & Examples
+              </li>
+              <li>
+                <i class="fas fa-smile-beam text-primary me-2"></i>Student
+                Satisfaction First
+              </li>
+              <li>
+                <i class="fas fa-balance-scale text-primary me-2"></i>Ethics
+                over Monetization
+              </li>
+              <li>
+                <i class="fas fa-user-graduate text-primary me-2"></i
+                >Personality Development Guidance
+              </li>
+              <li>
+                <i class="fas fa-lightbulb text-primary me-2"></i
+                >Entrepreneurial Motivation
+              </li>
+            </ul>
+            <h4 class="mt-4">
+              <i class="fas fa-eye text-success me-2"></i>Vision
+            </h4>
+            <p>Create innovative methodologies for practical education.</p>
+            <h4><i class="fas fa-bullseye text-danger me-2"></i>Mission</h4>
+            <p>Deliver real-time industry training for true potential.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
- <section class="para-section">
-  <div class="para-container">
-    <h2>Best Digital Marketing Institute in Hyderabad</h2>
-    <p>
-       digital marketing training institute in Hyderabad, India. 
-      Established when digital marketing and internet technologies were in their early stages in India. 
-      Since the inception of our institute, our focus has been on imparting quality, practical-oriented training 
-      in digital marketing and related areas.
-    </p>
-    <p>
-      We offer specialized, skill-based programs including SEO Training, Google Ads, Social Media Marketing, 
-      and Web Designing courses. Our digital marketing training is designed for students, working professionals, 
-      and entrepreneurs to implement real-world strategies and succeed in the digital space.
-    </p>
-    <p class="highlight">
-      Attend our <strong>Digital Marketing Training Demo</strong> and experience the quality of our training!
-    </p>
-  </div>
-</section>
- <section class="training-section">
-    <h2 class="section-title">Advanced Digital Marketing Training for Everyone</h2>
-    <div class="card-container">
+    </section>
 
-      <!-- Card 1 -->
-      <div class="card">
-        <img src="image3.jpg" alt="Job Seekers" />
-        <h3>Digital Marketing for Job Seekers</h3>
+    <!-- Introduction -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Best Digital Marketing Institute in Hyderabad</h2>
+        <p class="lead">
+          Our institute provides practical, globally recognized digital
+          marketing training since the industry's early days in India.
+        </p>
         <p>
-          Job oriented digital marketing course will make you ready for a job in digital marketing industry.
-          We have successfully placed many students in reputed companies as digital marketing professionals and marketing managers.
-          We give Placements Assistance.
+          We focus on SEO, Google Ads, Social Media, and Web Design, with
+          specialized tracks for students, professionals, and entrepreneurs.
+        </p>
+        <p class="fw-bold text-success">
+          Attend our <u>Demo</u> to experience our teaching quality!
         </p>
       </div>
+    </section>
 
-      <!-- Card 2 -->
-      <div class="card">
-        <img src="image4.jpg" alt="Entrepreneurs" />
-        <h3>Digital Marketing for Entrepreneurs</h3>
-        <p>
-          If your dream is to start your own business venture. With our course, you will learn how to implement
-          a digital marketing strategy customized to your business needs.
-          This course will assist you to target the right audience on the internet to increase your business.
-        </p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="card">
-        <img src="image5.jpg" alt="Online Earning" />
-        <h3>Digital Marketing for Online Earning</h3>
-        <p>
-          In today’s digital era we have many entrepreneurs making a fortune online.
-          We provide exclusive concepts of Google AdSense, Affiliate marketing and freelancing
-          to enable you to make money online. We will give a roadmap towards achieving success online.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-    <section id="highlights" class="section highlights">
+    <!-- Card-Based Audience Section -->
+    <section class="py-5 bg-light">
       <div class="container">
-        <center><h2 style="color: blue">Course Highlights</h2></center>
-
-        <div class="features">
-          <div class="card">
-            <i class="fas fa-bullhorn fa-2x" id="changecolor"></i>
-            <h3>Advanced Digital Marketing</h3>
-            <p>
-              Deep dive into the most current digital marketing techniques and
-              strategies. Learn how to run integrated campaigns with modern
-              tools, automation, and AI-driven insights.
-            </p>
+        <h2 class="text-center mb-5">Who Can Benefit?</h2>
+        <div class="row g-4">
+          <!-- Job Seekers -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow">
+              <img src="image3.jpg" class="card-img-top" alt="Job Seekers" />
+              <div class="card-body">
+                <h5 class="card-title">For Job Seekers</h5>
+                <p class="card-text">
+                  Job oriented digital marketing course will make you ready for
+                  a job in digital marketing industry. We have successfully
+                  placed many students in reputed companies as digital marketing
+                  professionals and marketing managers. We give Placements
+                  Assistance.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div class="card">
-            <center></center>
-            <i class="fas fa-blog fa-2x" id="changecolor"></i>
-            <h3>Blogging & WordPress</h3>
-            <p>
-              Set up, manage, and optimize your own blog or website using
-              WordPress. Learn essential blogging strategies for driving traffic
-              and building authority.
-            </p>
+          <!-- Entrepreneurs -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow">
+              <img src="image4.jpg" class="card-img-top" alt="Entrepreneurs" />
+              <div class="card-body">
+                <h5 class="card-title">For Entrepreneurs</h5>
+                <p class="card-text">
+                  If your dream is to start your own business venture. With our
+                  course, you will learn how to implement a digital marketing
+                  strategy customized to your business needs. This course will
+                  assist you to target the right audience on the internet to
+                  increase your business.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div class="card">
-            <i class="fas fa-pen-nib fa-2x" id="changecolor"></i>
-            <h3>Content Marketing</h3>
-            <p>
-              Create compelling content that drives engagement, builds trust,
-              and improves SEO. Understand how to develop content calendars,
-              blog posts, and brand stories.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fas fa-link fa-2x" id="changecolor"></i>
-            <h3>Affiliate Marketing</h3>
-            <p>
-              Learn how to promote other brands' products and earn passive
-              income. Discover affiliate networks, strategy, link-building, and
-              performance tracking.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fab fa-google fa-2x" id="changecolor"></i>
-            <h3>Google Ads</h3>
-            <p>
-              Master search, display, and video ads. Set up effective campaigns
-              to drive leads and sales with data-driven optimization and A/B
-              testing techniques.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fas fa-share-alt fa-2x" id="changecolor"></i>
-            <h3>Social Media Marketing</h3>
-            <p>
-              Grow and manage business profiles on Facebook, Instagram,
-              LinkedIn, and Twitter. Learn audience targeting, ad creation, and
-              performance tracking.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fab fa-youtube fa-2x" id="changecolor"></i>
-            <h3>YouTube Advertising</h3>
-            <p>
-              Leverage the power of video to market your brand. Run skippable
-              and non-skippable ads, optimize video content, and analyze viewer
-              behavior.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fas fa-chart-line fa-2x" id="changecolor"></i>
-            <h3>Google Analytics</h3>
-            <p>
-              Track, measure, and analyze your website traffic. Learn to create
-              custom reports and understand user behavior to make better
-              marketing decisions.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fas fa-search fa-2x" id="changecolor"></i>
-            <h3>Search Engine Optimization (SEO)</h3>
-            <p>
-              Learn both on-page and off-page SEO, including keyword research,
-              backlinking, technical SEO, and site audits to improve search
-              rankings.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fas fa-envelope fa-2x" id="changecolor"></i>
-            <h3>Email Marketing</h3>
-            <p>
-              Create high-converting email campaigns using tools like Mailchimp.
-              Learn list segmentation, subject line tactics, and email
-              automation workflows.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fas fa-dollar-sign fa-2x" id="changecolor"></i>
-            <h3>Google AdSense</h3>
-            <p>
-              Monetize your blog or website using Google AdSense. Learn how to
-              set up ad placements and increase revenue through optimized
-              content strategies.
-            </p>
-          </div>
-
-          <div class="card">
-            <i class="fas fa-tools fa-2x" id="changecolor"></i>
-            <h3>Work on Paid Tools</h3>
-            <p>
-              Get hands-on experience with premium tools like SEMrush, Ahrefs,
-              Canva Pro, Mailchimp, and more. Learn real-time campaign
-              management and analytics.
-            </p>
+          <!-- Online Earning -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow">
+              <img src="image5.jpg" class="card-img-top" alt="Online Earning" />
+              <div class="card-body">
+                <h5 class="card-title">For Online Earners</h5>
+                <p class="card-text">
+                  In today’s digital era we have many entrepreneurs making a
+                  fortune online. We provide exclusive concepts of Google
+                  AdSense, Affiliate marketing and freelancing to enable you to
+                  make money online. We will give a roadmap towards achieving
+                  success online.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="what-you-learn" class="section">
+    <!-- Course Highlights -->
+    <section id="courses" class="py-5 bg-white">
       <div class="container">
-        <center>
-          <h2>What You’ll Learn in Our Digital Marketing Course</h2>
-        </center>
-
-        <div class="features icons-grid">
-          <div class="card">
-            <i class="fas fa-search"></i>
-            <h3>SEO</h3>
-            <p>
-              Improve your website’s visibility and ranking in Google search
-              results.
-            </p>
+        <h2 class="text-center text-primary mb-5">Course Highlights</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-bullhorn fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Advanced Digital Marketing</h5>
+              <p class="card-text">
+                Deep dive into the most current digital marketing techniques and
+                strategies. Learn how to run integrated campaigns with modern
+                tools, automation, and AI-driven insights.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fas fa-bullhorn"></i>
-            <h3>Google Ads (PPC)</h3>
-            <p>Launch and manage high-converting paid campaigns.</p>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-blog fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Blogging & WordPress</h5>
+              <p class="card-text">
+                Set up, manage, and optimize your own blog or website using
+                WordPress. Learn essential blogging strategies for driving
+                traffic and building authority.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fab fa-facebook"></i>
-            <h3>Social Media Marketing</h3>
-            <p>
-              Promote your brand across Facebook, Instagram, LinkedIn & more.
-            </p>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-pen-nib fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Content Marketing</h5>
+              <p class="card-text">
+                Create compelling content that drives engagement, builds trust,
+                and improves SEO. Understand how to develop content calendars,
+                blog posts, and brand stories.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fas fa-envelope"></i>
-            <h3>Email Marketing</h3>
-            <p>Create drip campaigns and newsletters to boost engagement.</p>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-link fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Affiliate Marketing</h5>
+              <p class="card-text">
+                Learn how to promote other brands' products and earn passive
+                income. Discover affiliate networks, strategy, link-building,
+                and performance tracking.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fas fa-pen-nib"></i>
-            <h3>Content Marketing</h3>
-            <p>
-              Learn how to craft content that attracts and converts customers.
-            </p>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fab fa-google fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Google Ads</h5>
+              <p class="card-text">
+                Master search, display, and video ads. Set up effective
+                campaigns to drive leads and sales with data-driven optimization
+                and A/B testing techniques.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fas fa-chart-line"></i>
-            <h3>Analytics</h3>
-            <p>
-              Track results using Google Analytics and conversion tracking
-              tools.
-            </p>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-share-alt fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Social Media Marketing</h5>
+              <p class="card-text">
+                Grow and manage business profiles on Facebook, Instagram,
+                LinkedIn, and Twitter. Learn audience targeting, ad creation,
+                and performance tracking.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fas fa-user-friends"></i>
-            <h3>Influencer Marketing</h3>
-            <p>Collaborate with creators and build brand partnerships.</p>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fab fa-youtube fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">YouTube Advertising</h5>
+              <p class="card-text">
+                Leverage the power of video to market your brand. Run skippable
+                and non-skippable ads, optimize video content, and analyze
+                viewer behavior.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fas fa-video"></i>
-            <h3>Video Marketing</h3>
-            <p>Leverage YouTube and reels to increase engagement and reach.</p>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Google Analytics</h5>
+              <p class="card-text">
+                Track, measure, and analyze your website traffic. Learn to
+                create custom reports and understand user behavior to make
+                better marketing decisions.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fas fa-comment-dots"></i>
-            <h3>WhatsApp/SMS</h3>
-            <p>Use direct messaging for personal and impactful campaigns.</p>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-search fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">SEO (Search Engine Optimization)</h5>
+              <p class="card-text">
+                Learn both on-page and off-page SEO, including keyword research,
+                backlinking, technical SEO, and site audits to improve search
+                rankings.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Email Marketing</h5>
+              <p class="card-text">
+                Create high-converting email campaigns using tools like
+                Mailchimp. Learn list segmentation, subject line tactics, and
+                email automation workflows.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-dollar-sign fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Google AdSense</h5>
+              <p class="card-text">
+                Monetize your blog or website using Google AdSense. Learn how to
+                set up ad placements and increase revenue through optimized
+                content strategies.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <i class="fas fa-tools fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Paid Tools</h5>
+              <p class="card-text">
+                Get hands-on experience with premium tools like SEMrush, Ahrefs,
+                Canva Pro, Mailchimp, and more. Learn real-time campaign
+                management and analytics.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="why-our-training" class="section training-works">
-      <div class="container">
-        <h2>Why Our Training Works</h2>
-        <p class="subtitle">
-          A Practical, Job-Oriented Approach That Brings Real Results
-        </p>
 
-        <div class="training-grid">
-          <div class="training-step">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/2942/2942920.png"
-              alt="Hands-on Icon"
-            />
-            <p>Hands-on Training</p>
+    <!-- Features & What You Learn -->
+    <section id="what-you-learn" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What You’ll Learn</h2>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fas fa-search fa-2x text-primary mb-2"></i>
+              <h6>SEO</h6>
+              <p>Boost your website’s search ranking.</p>
+            </div>
           </div>
-          <div class="training-step">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png"
-              alt="Live Campaigns Icon"
-            />
-            <p>Live Campaigns</p>
+          <div class="col-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fas fa-bullhorn fa-2x text-primary mb-2"></i>
+              <h6>Google Ads (PPC)</h6>
+              <p>Launch & optimize ad campaigns.</p>
+            </div>
           </div>
-          <div class="training-step">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-              alt="Expert Mentors Icon"
-            />
-            <p>Expert Mentors</p>
+          <div class="col-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fab fa-facebook fa-2x text-primary mb-2"></i>
+              <h6>Social Media</h6>
+              <p>Grow brands on Facebook, Instagram, LinkedIn.</p>
+            </div>
           </div>
-          <div class="training-step">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
-              alt="Job Ready Icon"
-            />
-            <p>Job-Ready Skills</p>
+          <div class="col-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+              <h6>Email Marketing</h6>
+              <p>Drip campaigns, segmentation, automation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-3">
+          <div class="col-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fas fa-pen-nib fa-2x text-primary mb-2"></i>
+              <h6>Content Marketing</h6>
+              <p>Create and promote engaging content.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fas fa-chart-line fa-2x text-primary mb-2"></i>
+              <h6>Analytics</h6>
+              <p>Track your results and ROI.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fas fa-user-friends fa-2x text-primary mb-2"></i>
+              <h6>Influencer Marketing</h6>
+              <p>Brand partnerships with creators.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fas fa-video fa-2x text-primary mb-2"></i>
+              <h6>Video Marketing</h6>
+              <p>YouTube ads & reels strategies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-3">
+          <div class="col-md-3 offset-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fas fa-comment-dots fa-2x text-primary mb-2"></i>
+              <h6>WhatsApp/SMS</h6>
+              <p>Direct messaging for campaigns.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="border rounded p-3 text-center">
+              <i class="fas fa-link fa-2x text-primary mb-2"></i>
+              <h6>Affiliate Marketing</h6>
+              <p>Earn online via partnerships.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="why-choose-us" class="section">
+
+    <!-- Why Our Training Works -->
+    <section class="bg-light py-5">
       <div class="container">
-        <center><h2>Why Choose Digital Training</h2></center>
-
-        <div class="features-grid">
-          <div class="feature-card">
-            <i class="fas fa-calendar-alt fa-2x"></i>
-            <h3>Weekdays / Weekend Batches</h3>
-            <p>
-              We offer both weekday and weekend classes to match your schedule
-              and convenience.
-            </p>
+        <h2 class="text-center mb-4">Why Our Training Works</h2>
+        <div class="row g-4 text-center">
+          <div class="col-md-3">
+            <div class="p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2942/2942920.png"
+                alt=""
+                class="mb-2"
+                style="width: 48px"
+              />
+              <p>Hands-on Training</p>
+            </div>
           </div>
-
-          <div class="feature-card">
-            <i class="fas fa-globe fa-2x"></i>
-            <h3>Free Website, Domain & Hosting</h3>
-            <p>
-              Build your own website with free domain and hosting during the
-              course for practical learning.
-            </p>
+          <div class="col-md-3">
+            <div class="p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png"
+                alt=""
+                class="mb-2"
+                style="width: 48px"
+              />
+              <p>Live Campaigns</p>
+            </div>
           </div>
-
-          <div class="feature-card">
-            <i class="fas fa-chalkboard-teacher fa-2x"></i>
-            <h3>Practical Classroom Sessions</h3>
-            <p>
-              Our 80% practical + 20% theory approach ensures you gain
-              real-world knowledge, not just concepts.
-            </p>
+          <div class="col-md-3">
+            <div class="p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                alt=""
+                class="mb-2"
+                style="width: 48px"
+              />
+              <p>Expert Mentors</p>
+            </div>
           </div>
-
-          <div class="feature-card">
-            <i class="fas fa-users fa-2x"></i>
-            <h3>Limited Batch Size</h3>
-            <p>
-              We train in small groups to provide personalized attention and
-              better interaction.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <i class="fas fa-user-check fa-2x"></i>
-            <h3>Google Certified Trainers</h3>
-            <p>
-              Learn from certified digital marketing experts with hands-on
-              industry experience.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <i class="fas fa-certificate fa-2x"></i>
-            <h3>11+ Google Certifications</h3>
-            <p>
-              We prepare you for multiple Google certifications to enhance your
-              resume and credibility.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <i class="fas fa-tools fa-2x"></i>
-            <h3>Free Tools Worth ₹75,000</h3>
-            <p>
-              Get access to premium SEO, SMO, and PPC tools to organize and run
-              your campaigns effectively.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <i class="fas fa-paint-brush fa-2x"></i>
-            <h3>Free Graphic Design Course</h3>
-            <p>
-              Get a bonus course worth ₹4,000 to learn the basics of design for
-              ads and creatives.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <i class="fas fa-briefcase fa-2x"></i>
-            <h3>100% Placement Assistance</h3>
-            <p>
-              Get job support from our partner companies and placement team
-              after course completion.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <i class="fas fa-users-cog fa-2x"></i>
-            <h3>Strong Alumni Network</h3>
-            <p>
-              Connect with past trainees and stay updated through our vibrant
-              alumni community.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <i class="fas fa-bullhorn fa-2x"></i>
-            <h3>Run Live Campaigns</h3>
-            <p>
-              Spend real money to launch actual campaigns and learn how to
-              manage them in real-time.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <i class="fas fa-tasks fa-2x"></i>
-            <h3>Daily & Weekly Assignments</h3>
-            <p>
-              Practical tasks after every session help reinforce your learning
-              and clear your doubts.
-            </p>
+          <div class="col-md-3">
+            <div class="p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+                alt=""
+                class="mb-2"
+                style="width: 48px"
+              />
+              <p>Job-Ready Skills</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="section contact">
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
       <div class="container">
-        <center><h2>Contact Us</h2></center>
-        <form id="contactForm">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Email" required />
-          <input type="tel" placeholder="Phone Number" required />
-          <textarea placeholder="Message" required></textarea>
-          <button type="submit" class="btn">Submit</button>
+        <h2 class="text-center mb-4">Why Choose Digital Training</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-calendar-alt fa-2x mb-2"></i>
+              <h6>Flexible Batch Timings</h6>
+              <p>Weekdays / Weekend classes for your convenience.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-globe fa-2x mb-2"></i>
+              <h6>Free Website & Hosting</h6>
+              <p>Build your website with provided hosting.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-chalkboard-teacher fa-2x mb-2"></i>
+              <h6>Practical Sessions</h6>
+              <p>80% practical, 20% theory for job-ready skills.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-users fa-2x mb-2"></i>
+              <h6>Small Batches</h6>
+              <p>Attention to every student.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-user-check fa-2x mb-2"></i>
+              <h6>Google Certified Trainers</h6>
+              <p>Learn from certified industry experts.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-certificate fa-2x mb-2"></i>
+              <h6>11+ Google Certifications</h6>
+              <p>Certification preparation included.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-tools fa-2x mb-2"></i>
+              <h6>Free Tools Worth ₹75,000</h6>
+              <p>Access premium SEO, SMO & PPC tools.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-paint-brush fa-2x mb-2"></i>
+              <h6>Free Graphic Design Course</h6>
+              <p>Bonus creative skills for ad designing.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-briefcase fa-2x mb-2"></i>
+              <h6>100% Placement Assistance</h6>
+              <p>Job support after course.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-users-cog fa-2x mb-2"></i>
+              <h6>Strong Alumni Network</h6>
+              <p>Connect & grow with community.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-bullhorn fa-2x mb-2"></i>
+              <h6>Live Campaigns</h6>
+              <p>Spend real money on real ads.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded p-3">
+              <i class="fas fa-tasks fa-2x mb-2"></i>
+              <h6>Assignments</h6>
+              <p>Daily & weekly tasks enforce learning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form class="mx-auto" style="max-width: 540px">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </div>
         </form>
       </div>
     </section>
-    
 
-    <!-- Why Choose Us -->
-    <section class="why">
-      <div class="container">
-        <h2>Why Join Our Training?</h2>
-        <div class="grid">
-          <div class="item">
-            <i class="fas fa-check-circle"></i>
-            <p>100% Practical & Job-Oriented Training</p>
-          </div>
-          <div class="item">
-            <i class="fas fa-check-circle"></i>
-            <p>Industry-Recognized Certification</p>
-          </div>
-          <div class="item">
-            <i class="fas fa-check-circle"></i>
-            <p>Live Projects & Case Studies</p>
-          </div>
-          <div class="item">
-            <i class="fas fa-check-circle"></i>
-            <p>Experienced Trainers with 8+ Years of Expertise</p>
-          </div>
-          <div class="item">
-            <i class="fas fa-check-circle"></i>
-            <p>One-on-One Mentoring & Doubt Clearing</p>
-          </div>
-          <div class="item">
-            <i class="fas fa-check-circle"></i>
-            <p>Affordable Fees & Flexible Timings</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modules -->
-    <section class="modules">
-      <div class="container">
-        <h2>Training Modules</h2>
-        <div class="grid">
-          <div><i class="fas fa-check-circle"></i> SEO (Search Engine Optimization)</div>
-          <div><i class="fas fa-check-circle"></i> Google Ads (PPC)</div>
-          <div><i class="fas fa-check-circle"></i> Social Media Marketing</div>
-          <div><i class="fas fa-check-circle"></i> Email Marketing</div>
-          <div><i class="fas fa-check-circle"></i> Content Marketing</div>
-          <div><i class="fas fa-check-circle"></i> Affiliate Marketing</div>
-          <div><i class="fas fa-check-circle"></i> Website Analytics</div>
-          <div><i class="fas fa-check-circle"></i> Marketing Automation</div>
-        </div>
-      </div>
-    </section>
-
-    <script src="script.js"></script>
-  </body>
-</html>
-
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 Digital Marketing Training. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-3 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">
+          &copy; 2025 Digital Marketing Training. All rights reserved.
+        </p>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
